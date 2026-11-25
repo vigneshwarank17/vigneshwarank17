@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vigneshwaran K – AI Data Annotation Specialist</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<style>
+:root{--bg:#f4f7f6;--card:#fff;--tx:#14201d;--mu:#52645e;--ac:#0d9488;--ac2:#d9f2ee;--bd:#dbe4e1;--hb:#0b1514;--ht:#eafaf7;--hm:#9fc4bd;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0b1211;--card:#131d1b;--tx:#e8f3f0;--mu:#9bb2ac;--ac:#2dd4bf;--ac2:#12322e;--bd:#233330}}
+:root[data-theme="dark"]{--bg:#0b1211;--card:#131d1b;--tx:#e8f3f0;--mu:#9bb2ac;--ac:#2dd4bf;--ac2:#12322e;--bd:#233330}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 "Segoe UI",system-ui,-apple-system,Arial,sans-serif}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.hero{background:radial-gradient(circle at 70% 40%,#123c38 0,var(--hb) 65%);color:var(--ht);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr 1fr;align-items:center;gap:10px;min-height:520px;padding-top:28px;padding-bottom:28px}
+.eyebrow{color:#2dd4bf;font-weight:700;letter-spacing:.12em;font-size:.8rem;text-transform:uppercase}
+h1{font-size:clamp(2.2rem,6vw,3.6rem);line-height:1.05;margin:10px 0;letter-spacing:-.03em}
+h1 span{background:linear-gradient(90deg,#2dd4bf,#fbbf24);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--hm);max-width:480px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.btn{padding:11px 20px;border-radius:10px;background:#2dd4bf;color:#06201c;text-decoration:none;font-weight:700}
+.btn.o{background:transparent;color:#2dd4bf;border:1.5px solid #2dd4bf}
+.stage{position:relative;height:440px}
+#gl{position:absolute;inset:0;width:100%;height:100%}
+.chip{position:absolute;padding:4px 10px;border-radius:6px;font:600 12px/1.3 ui-monospace,Menlo,Consolas,monospace;background:rgba(11,21,20,.8);border:1px solid;animation:fl 5s ease-in-out infinite}
+.c1{left:2%;top:18%;color:#fbbf24;border-color:#fbbf24}
+.c2{right:2%;top:36%;color:#f472b6;border-color:#f472b6;animation-delay:-2s}
+.c3{left:12%;bottom:12%;color:#2dd4bf;border-color:#2dd4bf;animation-delay:-3.5s}
+@keyframes fl{50%{transform:translateY(-10px)}}
+section{padding:44px 0 6px}
+h2{font-size:1.7rem;margin:0 0 6px;letter-spacing:-.02em}
+.sub{color:var(--mu);margin:0 0 22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}
+.tilt{background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden;transition:transform .15s ease-out,box-shadow .2s;transform-style:preserve-3d;box-shadow:0 8px 24px rgba(0,0,0,.08)}
+.tilt:hover{box-shadow:0 18px 40px rgba(13,148,136,.25)}
+.tilt svg{display:block;width:100%;height:auto}
+.cap{padding:14px 18px 18px}
+.cap h3{margin:0 0 4px;font-size:1.05rem}
+.cap p{margin:0;color:var(--mu);font-size:.93rem}
+.flow{display:flex;flex-wrap:wrap;gap:12px}
+.step{flex:1 1 160px;background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:16px;text-align:center}
+.step svg{width:54px;height:54px}
+.step b{display:block;margin-top:6px}
+.step span{color:var(--mu);font-size:.86rem}
+.job{background:var(--card);border:1px solid var(--bd);border-left:5px solid var(--ac);border-radius:14px;padding:16px 20px;margin-bottom:14px}
+.job h3{margin:0;font-size:1.05rem}
+.meta{color:var(--mu);font-size:.88rem;margin:2px 0 8px}
+.job ul{margin:0;padding-left:20px;color:var(--mu);font-size:.95rem}
+.tags{display:flex;flex-wrap:wrap;gap:9px}
+.tag{background:var(--ac2);color:var(--ac);padding:6px 14px;border-radius:999px;font-size:.88rem;font-weight:700}
+.note{color:var(--mu);font-size:.85rem;margin-top:12px}
+.cta{margin:46px 0 0;background:var(--hb);color:var(--ht);text-align:center;padding:40px 20px 46px}
+.cta p{color:var(--hm)}
+footer{color:var(--hm);font-size:.85rem;margin-top:18px}
+.hero{position:relative}.hero::before,.hero::after{content:"";position:absolute;border-radius:50%;filter:blur(60px);opacity:.35;animation:orb 12s ease-in-out infinite alternate}.hero::before{width:300px;height:300px;background:#2dd4bf;left:-80px;top:-60px}.hero::after{width:260px;height:260px;background:#f472b6;right:-60px;bottom:-60px;animation-delay:-5s}.hero .wrap{position:relative;z-index:1}@keyframes orb{to{transform:translate(40px,30px) scale(1.2)}}
+.rv{opacity:0;transform:translateY(26px);transition:opacity .7s,transform .7s}.rv.in{opacity:1;transform:none}
+.lab{position:relative;height:420px;border-radius:20px;overflow:hidden;background:radial-gradient(circle at 50% 30%,#14403b,#070d0c 75%);border:1px solid var(--bd);cursor:grab;touch-action:pan-y}.lab:active{cursor:grabbing}.lab canvas{position:absolute;inset:0;width:100%;height:100%}
+.legend{position:absolute;left:14px;bottom:12px;display:flex;gap:8px;flex-wrap:wrap}.legend span{font:600 12px ui-monospace,Menlo,Consolas,monospace;padding:3px 9px;border-radius:6px;background:rgba(7,13,12,.8);border:1px solid}.hint{position:absolute;right:14px;top:12px;color:#9fc4bd;font-size:.8rem}
+.ringwrap{height:290px;overflow:hidden;perspective:1100px;position:relative}.ring{position:absolute;width:170px;height:210px;left:50%;top:40px;margin-left:-85px;transform-style:preserve-3d;animation:spin 26s linear infinite}.ringwrap:hover .ring{animation-play-state:paused}.rc{position:absolute;inset:0;border-radius:16px;padding:18px 14px;text-align:center;color:#fff;transform:rotateY(calc(var(--i)*60deg)) translateZ(230px);box-shadow:0 10px 30px rgba(0,0,0,.3);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}.rc svg{width:56px;height:56px}.rc b{font-size:1.05rem}.rc span{font-size:.8rem;opacity:.9}@keyframes spin{to{transform:rotateY(-360deg)}}
+.flips{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}.flip{perspective:900px;height:170px;cursor:pointer}.fi{position:relative;height:100%;transition:transform .7s;transform-style:preserve-3d}.flip:hover .fi,.flip.on .fi{transform:rotateY(180deg)}.fa,.fb{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:16px;padding:18px;display:flex;flex-direction:column;justify-content:center}.fa{color:#fff;font-size:1.25rem;font-weight:800}.fa small{font-weight:500;opacity:.85;font-size:.85rem}.fb{background:var(--card);border:1px solid var(--bd);transform:rotateY(180deg);color:var(--mu);font-size:.95rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:24px;align-items:center}
+.iso{height:360px;perspective:1200px;display:flex;align-items:center;justify-content:center;overflow:hidden;background:radial-gradient(circle,var(--ac2),transparent 70%);border-radius:20px}.stack{position:relative;width:220px;height:220px;transform-style:preserve-3d;transform:rotateX(58deg) rotateZ(-38deg)}.pl{position:absolute;inset:0;border-radius:16px;border:2px solid rgba(255,255,255,.55);display:flex;align-items:flex-end;justify-content:flex-end;padding:10px 14px;color:#fff;font-weight:800;font-size:.95rem;transform:translateZ(calc(var(--z)*42px));transition:transform .5s;box-shadow:0 0 24px rgba(0,0,0,.25)}.iso:hover .pl{transform:translateZ(calc(var(--z)*78px))}
+.plist{margin:0;padding:0;list-style:none;display:grid;gap:10px}.plist li{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:10px 14px;font-size:.93rem;color:var(--mu)}.plist b{color:var(--tx)}
+.cubebox{height:270px;perspective:900px;display:flex;align-items:center;justify-content:center}.cube{width:140px;height:140px;position:relative;transform-style:preserve-3d;animation:cr 18s linear infinite}.cube div{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;border:2px solid rgba(255,255,255,.45);border-radius:10px;font-size:1.05rem}.cube div:nth-child(1){transform:translateZ(70px);background:#0d9488}.cube div:nth-child(2){transform:rotateY(90deg) translateZ(70px);background:#7c3aed}.cube div:nth-child(3){transform:rotateY(180deg) translateZ(70px);background:#db2777}.cube div:nth-child(4){transform:rotateY(-90deg) translateZ(70px);background:#f59e0b}.cube div:nth-child(5){transform:rotateX(90deg) translateZ(70px);background:#0284c7}.cube div:nth-child(6){transform:rotateX(-90deg) translateZ(70px);background:#16a34a}@keyframes cr{from{transform:rotateX(-22deg) rotateY(0)}to{transform:rotateX(-22deg) rotateY(360deg)}}
+.case{background:var(--card);border:1px solid var(--bd);border-radius:18px;overflow:hidden}.case h3{margin:0;padding:16px 20px;color:#fff;font-size:1.1rem}.case .bd{padding:14px 20px 18px;font-size:.93rem;color:var(--mu)}.case b{color:var(--tx);display:block;margin-top:8px}
+.tl{perspective:1100px;display:grid;gap:14px;padding:6px 0}.tli{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:14px 18px;transform:rotateY(-9deg);transform-origin:left center;transition:transform .35s;display:grid;grid-template-columns:90px 1fr;gap:14px;align-items:center}.tli:nth-child(even){transform:rotateY(9deg);transform-origin:right center}.tli:hover{transform:none;box-shadow:0 12px 30px rgba(13,148,136,.25)}.yr{font-weight:800;color:var(--ac);font-size:1.05rem}.tli p{margin:0;color:var(--mu);font-size:.93rem}.tli b{color:var(--tx)}
+.faq details{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:12px 16px;margin-bottom:10px}.faq summary{cursor:pointer;font-weight:700}.faq p{margin:8px 0 0;color:var(--mu);font-size:.95rem}
+@media(max-width:760px){.two{grid-template-columns:1fr}.tli{grid-template-columns:1fr;gap:2px}.ring{transform-origin:center;scale:.8}.hero .wrap{grid-template-columns:1fr}.stage{height:330px}}
+@media(prefers-reduced-motion:reduce){.chip{animation:none}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div>
+<div class="eyebrow">AI Data Annotation Specialist</div>
+<h1>I teach machines <span>what they are looking at.</span></h1>
+<p>Vigneshwaran K: 2+ years labeling and validating image, video, and event data for AI/ML training, with guideline-first accuracy and clean edge-case handling.</p>
+<div class="btns"><a class="btn" href="mailto:kvigneshwaran178@gmail.com">Email me</a><a class="btn o" href="#work">See my work</a></div>
+</div>
+<div class="stage" id="stage">
+<canvas id="gl"></canvas>
+<div class="chip c1">player 0.98</div><div class="chip c2">tackle · 00:42</div><div class="chip c3">validated ✓</div>
+</div>
+</div></header>
+
+<main class="wrap" id="work">
+<section>
+<h2>Annotation in action</h2>
+<p class="sub">Illustrations of the kinds of labeling I do. Hover to tilt.</p>
+<div class="grid">
+
+<div class="tilt"><svg viewBox="0 0 300 190" role="img" aria-label="Image annotation with bounding boxes">
+<defs><linearGradient id="sk" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7dd3fc"/><stop offset="1" stop-color="#e0f2fe"/></linearGradient></defs>
+<rect width="300" height="190" fill="url(#sk)"/><rect y="130" width="300" height="60" fill="#475569"/><rect y="156" width="300" height="3" fill="#fde68a"/>
+<rect x="40" y="104" width="90" height="34" rx="8" fill="#ef4444"/><rect x="58" y="88" width="52" height="22" rx="6" fill="#fca5a5"/><circle cx="62" cy="140" r="9" fill="#1e293b"/><circle cx="110" cy="140" r="9" fill="#1e293b"/>
+<circle cx="205" cy="92" r="9" fill="#fcd34d"/><rect x="196" y="101" width="18" height="34" rx="6" fill="#6366f1"/>
+<rect x="34" y="82" width="102" height="64" fill="none" stroke="#fbbf24" stroke-width="2.5" stroke-dasharray="5 3"/><rect x="34" y="68" width="48" height="14" fill="#fbbf24"/><text x="38" y="79" font-size="10" font-weight="700" fill="#1c1917">car</text>
+<rect x="188" y="78" width="34" height="62" fill="none" stroke="#f472b6" stroke-width="2.5" stroke-dasharray="5 3"/><rect x="188" y="64" width="62" height="14" fill="#f472b6"/><text x="192" y="75" font-size="10" font-weight="700" fill="#1c1917">person</text>
+</svg><div class="cap"><h3>Image annotation</h3><p>Bounding boxes and classes applied to guideline, in CVAT and Label Studio.</p></div></div>
+
+<div class="tilt"><svg viewBox="0 0 300 190" role="img" aria-label="American football event annotation">
+<rect width="300" height="190" fill="#2f7d4f"/><g stroke="#ffffffaa" stroke-width="1.5"><line x1="60" y1="0" x2="60" y2="190"/><line x1="120" y1="0" x2="120" y2="190"/><line x1="180" y1="0" x2="180" y2="190"/><line x1="240" y1="0" x2="240" y2="190"/></g>
+<g fill="#1d4ed8"><circle cx="95" cy="70" r="7"/><circle cx="110" cy="115" r="7"/><circle cx="85" cy="150" r="7"/></g><g fill="#dc2626"><circle cx="150" cy="82" r="7"/><circle cx="162" cy="120" r="7"/><circle cx="200" cy="60" r="7"/></g>
+<path d="M95 70 Q 150 20 200 60" fill="none" stroke="#fde047" stroke-width="2" stroke-dasharray="5 4"/><ellipse cx="200" cy="60" rx="5" ry="3" fill="#92400e"/>
+<rect x="140" y="72" width="30" height="20" fill="none" stroke="#fbbf24" stroke-width="2"/><rect x="140" y="58" width="42" height="14" fill="#fbbf24"/><text x="144" y="69" font-size="9" font-weight="700" fill="#1c1917">tackle</text>
+<rect x="186" y="46" width="30" height="28" fill="none" stroke="#f472b6" stroke-width="2"/><rect x="186" y="32" width="38" height="14" fill="#f472b6"/><text x="190" y="43" font-size="9" font-weight="700" fill="#1c1917">pass</text>
+</svg><div class="cap"><h3>American football events</h3><p>Passes, runs, tackles, penalties, and scoring plays labeled from live video.</p></div></div>
+
+<div class="tilt"><svg viewBox="0 0 300 190" role="img" aria-label="Cricket ball-by-ball annotation">
+<rect width="300" height="190" fill="#3f8f4f"/><ellipse cx="150" cy="95" rx="140" ry="85" fill="#4ca35d" stroke="#fff" stroke-width="2"/><rect x="132" y="25" width="36" height="140" fill="#d6b77a"/>
+<g stroke="#fff" stroke-width="2"><line x1="144" y1="36" x2="156" y2="36"/><line x1="144" y1="154" x2="156" y2="154"/></g>
+<path d="M150 40 Q 120 90 140 148" fill="none" stroke="#fde047" stroke-width="2.5" stroke-dasharray="5 4"/><circle cx="127" cy="96" r="6" fill="#dc2626"/>
+<g fill="#1d4ed8"><circle cx="60" cy="60" r="6"/><circle cx="235" cy="70" r="6"/><circle cx="215" cy="140" r="6"/><circle cx="75" cy="135" r="6"/></g>
+<rect x="168" y="60" width="116" height="42" rx="6" fill="#0b1514" opacity=".88"/><text x="176" y="77" font-size="10" font-weight="700" fill="#2dd4bf">delivery: off-spin</text><text x="176" y="91" font-size="10" fill="#e8f3f0">outcome: 1 run · cover</text>
+</svg><div class="cap"><h3>Cricket ball-by-ball</h3><p>Delivery type, outcome, fielding positions, and player actions, live and recorded.</p></div></div>
+
+<div class="tilt"><svg viewBox="0 0 300 190" role="img" aria-label="Video timeline with event markers">
+<rect width="300" height="190" fill="#0f1b19"/><rect x="20" y="20" width="260" height="90" rx="8" fill="#1b2d2a"/><polygon points="140,50 140,80 166,65" fill="#2dd4bf"/>
+<rect x="20" y="130" width="260" height="30" rx="6" fill="#1b2d2a"/>
+<g stroke="#3b5a55" stroke-width="1"><line x1="60" y1="130" x2="60" y2="160"/><line x1="100" y1="130" x2="100" y2="160"/><line x1="140" y1="130" x2="140" y2="160"/><line x1="180" y1="130" x2="180" y2="160"/><line x1="220" y1="130" x2="220" y2="160"/><line x1="260" y1="130" x2="260" y2="160"/></g>
+<rect x="48" y="136" width="30" height="18" rx="4" fill="#fbbf24"/><rect x="108" y="136" width="44" height="18" rx="4" fill="#f472b6"/><rect x="190" y="136" width="52" height="18" rx="4" fill="#2dd4bf"/>
+<line x1="124" y1="118" x2="124" y2="168" stroke="#fff" stroke-width="2"/><polygon points="118,118 130,118 124,126" fill="#fff"/>
+</svg><div class="cap"><h3>Timeline alignment</h3><p>Events matched precisely to source footage, frame by frame.</p></div></div>
+
+</div></section>
+
+<section>
+<h2>3D annotation lab</h2><p class="sub">A LiDAR-style street scene with 3D cuboid labels. Drag to rotate.</p>
+<div class="lab" id="lab"><canvas id="gl2"></canvas><div class="hint">drag to orbit</div><div class="legend"><span style="color:#fbbf24;border-color:#fbbf24">car</span><span style="color:#f472b6;border-color:#f472b6">pedestrian</span><span style="color:#38bdf8;border-color:#38bdf8">truck</span></div></div>
+<p class="note">A generated demo scene, not client data.</p>
+</section>
+
+<section>
+<h2>My toolkit</h2><p class="sub">Hover to pause the ring.</p>
+<div class="ringwrap"><div class="ring">
+<div class="rc" style="--i:0;background:linear-gradient(135deg,#0d9488,#115e59)"><svg viewBox="0 0 54 54"><rect x="8" y="10" width="38" height="34" fill="none" stroke="#fff" stroke-width="3" stroke-dasharray="6 4"/><circle cx="27" cy="27" r="5" fill="#fff"/></svg><b>CVAT</b><span>Image and video labeling</span></div>
+<div class="rc" style="--i:1;background:linear-gradient(135deg,#7c3aed,#4c1d95)"><svg viewBox="0 0 54 54"><path d="M10 12h24l10 10v22H10z" fill="none" stroke="#fff" stroke-width="3"/><path d="M18 30h18M18 37h12" stroke="#fff" stroke-width="3"/></svg><b>Label Studio</b><span>Multi-type annotation</span></div>
+<div class="rc" style="--i:2;background:linear-gradient(135deg,#16a34a,#14532d)"><svg viewBox="0 0 54 54"><rect x="8" y="8" width="38" height="38" fill="none" stroke="#fff" stroke-width="3"/><path d="M8 22h38M8 34h38M22 8v38M34 8v38" stroke="#fff" stroke-width="2"/></svg><b>Excel</b><span>Tracking and checks</span></div>
+<div class="rc" style="--i:3;background:linear-gradient(135deg,#f59e0b,#b45309)"><svg viewBox="0 0 54 54"><circle cx="27" cy="27" r="19" fill="none" stroke="#fff" stroke-width="3"/><path d="M17 28l7 7 13-14" fill="none" stroke="#fff" stroke-width="4"/></svg><b>QA review</b><span>Accuracy and consistency</span></div>
+<div class="rc" style="--i:4;background:linear-gradient(135deg,#db2777,#831843)"><svg viewBox="0 0 54 54"><rect x="6" y="12" width="42" height="30" rx="4" fill="none" stroke="#fff" stroke-width="3"/><polygon points="23,20 23,34 35,27" fill="#fff"/></svg><b>Video events</b><span>Live and archived</span></div>
+<div class="rc" style="--i:5;background:linear-gradient(135deg,#0284c7,#0c4a6e)"><svg viewBox="0 0 54 54"><circle cx="27" cy="27" r="19" fill="none" stroke="#fff" stroke-width="3"/><circle cx="27" cy="27" r="4" fill="#fff"/><path d="M27 8v8M27 38v8M8 27h8M38 27h8" stroke="#fff" stroke-width="3"/></svg><b>Edge cases</b><span>Escalate and document</span></div>
+</div></div>
+</section>
+
+<section>
+<h2>What I bring</h2><p class="sub">Tap or hover each card.</p>
+<div class="flips">
+<div class="flip"><div class="fi"><div class="fa" style="background:linear-gradient(135deg,#0d9488,#134e4a)">Accuracy<small>Guideline-first labels</small></div><div class="fb">Every label follows the project guidelines and calibration standards, then gets verified after each session.</div></div></div>
+<div class="flip"><div class="fi"><div class="fa" style="background:linear-gradient(135deg,#7c3aed,#4c1d95)">Consistency<small>Same rules, every sample</small></div><div class="fb">Large-volume archives and live events get the same standard, so the dataset stays clean for model training.</div></div></div>
+<div class="flip"><div class="fi"><div class="fa" style="background:linear-gradient(135deg,#db2777,#831843)">Escalation<small>No guessing on edge cases</small></div><div class="fb">Ambiguous or unclear cases are flagged and documented for quality reviewers instead of being guessed.</div></div></div>
+</div>
+</section>
+
+<section>
+<h2>Case studies</h2><p class="sub">The two sports projects I worked on at Infosearch.</p>
+<div class="grid">
+<div class="case"><h3 style="background:linear-gradient(135deg,#2f7d4f,#14532d)">American football · video event annotation</h3><div class="bd"><b>Challenge</b>Fast play-by-play action where every event has to land on the right moment in the footage.<b>What I did</b>Labeled real-time game events (passes, runs, tackles, penalties, scoring plays) from video and analyzed player movement and positioning.<b>Quality focus</b>Precise timeline alignment with the source footage, so the output works as structured AI/ML training data.</div></div>
+<div class="case"><h3 style="background:linear-gradient(135deg,#b45309,#78350f)">Cricket · ball-by-ball event annotation</h3><div class="bd"><b>Challenge</b>Many small details per delivery, captured in real time during live matches.<b>What I did</b>Annotated delivery type, outcome, fielding positions, and player actions for live and recorded matches.<b>Quality focus</b>Verified data integrity after each session, flagged inconsistencies, and documented quality issues to uphold benchmarks.</div></div>
+</div></section>
+
+<section>
+<h2>Quality pipeline in 3D</h2><p class="sub">Hover the stack to pull the layers apart.</p>
+<div class="two">
+<div class="iso"><div class="stack">
+<div class="pl" style="--z:0;background:#334155">Raw data</div>
+<div class="pl" style="--z:1;background:#0d9488cc">Guidelines</div>
+<div class="pl" style="--z:2;background:#7c3aedcc">Annotation</div>
+<div class="pl" style="--z:3;background:#f59e0bcc">Validation</div>
+<div class="pl" style="--z:4;background:#db2777cc">Delivery</div>
+</div></div>
+<ul class="plist">
+<li><b>Raw data:</b> images, video, and event feeds arrive for labeling.</li>
+<li><b>Guidelines:</b> project instructions and calibration standards set the rules.</li>
+<li><b>Annotation:</b> labeling and classifying with consistency.</li>
+<li><b>Validation:</b> accuracy checks, error correction, and edge-case review.</li>
+<li><b>Delivery:</b> on-time, confidential, ready for model training.</li>
+</ul></div></section>
+
+<section>
+<h2>Data I label</h2><p class="sub">A spinning cube of the dataset types I work with.</p>
+<div class="two">
+<div class="cubebox"><div class="cube"><div>Image</div><div>Video</div><div>Event</div><div>Text</div><div>Structured</div><div>Unstructured</div></div></div>
+<ul class="plist">
+<li><b>Image and video:</b> classification and annotation using CVAT and Label Studio.</li>
+<li><b>Event data:</b> live and recorded sports events with timeline alignment.</li>
+<li><b>Text and content:</b> classification and review to project guidelines.</li>
+<li><b>Structured and unstructured:</b> organized, checked, and tracked with Excel.</li>
+</ul></div></section>
+
+<section>
+<h2>Career journey</h2><p class="sub">Tilted in 3D, hover to straighten.</p>
+<div class="tl">
+<div class="tli"><div class="yr">2017–2021</div><p><b>B.E. Electronics &amp; Communication Engineering</b><br>AAA College of Engineering and Technology</p></div>
+<div class="tli"><div class="yr">2022–2023</div><p><b>Customer Support Executive</b><br>Mistwood Farms: SLA-driven support, CRM accuracy, and escalation of root-cause issues.</p></div>
+<div class="tli"><div class="yr">2023–2026</div><p><b>Process Executive, Data Annotator &amp; Sports Data Analyst</b><br>Infosearch: image, video, and event annotation, validation, and quality review.</p></div>
+<div class="tli"><div class="yr">Next</div><p><b>Full-time AI Data Annotation role in India</b><br>Looking for a team where accuracy and quality standards matter.</p></div>
+</div></section>
+
+<section class="faq">
+<h2>Quick answers</h2>
+<details><summary>Which tools do you use?</summary><p>CVAT and Label Studio for annotation, Microsoft Excel for tracking and checks, plus web-based applications and CRM systems.</p></details>
+<details><summary>How do you handle unclear cases?</summary><p>I review the sample against the guidelines, flag the inconsistency, and escalate it to quality reviewers rather than guessing.</p></details>
+<details><summary>Can you meet deadlines at volume?</summary><p>Yes. I completed tasks within expected timelines, including large-volume archives and live events.</p></details>
+<details><summary>How do you treat project data?</summary><p>Confidentially and responsibly throughout annotation and validation work.</p></details>
+<details><summary>Do you work independently or in a team?</summary><p>Both. I complete assignments independently and collaborate with teammates, quality reviewers, and data operations teams on calibration.</p></details>
+</section>
+
+<section>
+<h2>How I work</h2><p class="sub">A repeatable loop that keeps quality high at volume.</p>
+<div class="flow">
+<div class="step"><svg viewBox="0 0 54 54"><rect x="10" y="6" width="34" height="42" rx="5" fill="none" stroke="#2dd4bf" stroke-width="3"/><path d="M17 20h20M17 28h20M17 36h12" stroke="#2dd4bf" stroke-width="3"/></svg><b>Read guidelines</b><span>Calibrate first</span></div>
+<div class="step"><svg viewBox="0 0 54 54"><rect x="9" y="12" width="36" height="30" fill="none" stroke="#fbbf24" stroke-width="3" stroke-dasharray="6 4"/><circle cx="27" cy="27" r="5" fill="#fbbf24"/></svg><b>Annotate</b><span>Consistent labels</span></div>
+<div class="step"><svg viewBox="0 0 54 54"><circle cx="27" cy="27" r="19" fill="none" stroke="#2dd4bf" stroke-width="3"/><path d="M17 28l7 7 13-14" fill="none" stroke="#2dd4bf" stroke-width="4"/></svg><b>Validate</b><span>Check integrity</span></div>
+<div class="step"><svg viewBox="0 0 54 54"><path d="M27 8l21 38H6z" fill="none" stroke="#f472b6" stroke-width="3"/><path d="M27 22v12" stroke="#f472b6" stroke-width="4"/><circle cx="27" cy="40" r="2.5" fill="#f472b6"/></svg><b>Escalate</b><span>Flag unclear cases</span></div>
+</div></section>
+
+<section>
+<h2>Experience</h2>
+<div class="job"><h3>Process Executive – Data Annotator &amp; Sports Data Analyst</h3><div class="meta">Infosearch Pvt. Ltd., Chennai · 2023 – 2026</div>
+<ul><li>Annotated, labeled, classified, and validated image, video, and event datasets for AI/ML training.</li><li>Labeled American football and cricket events live and from archives, with precise timeline alignment.</li><li>Reviewed edge cases, escalated unclear samples, and supported calibration with quality reviewers.</li></ul></div>
+<div class="job"><h3>Customer Support Executive</h3><div class="meta">Mistwood Farms Pvt. Ltd., Chennai · 2022 – 2023</div>
+<ul><li>Delivered phone and email support within SLA targets and kept accurate CRM records.</li></ul></div>
+</section>
+
+<section>
+<h2>Tools &amp; skills</h2>
+<div class="tags"><span class="tag">CVAT</span><span class="tag">Label Studio</span><span class="tag">Microsoft Excel</span><span class="tag">Data validation</span><span class="tag">Quality assurance</span><span class="tag">Edge-case review</span><span class="tag">Guideline adherence</span><span class="tag">Confidentiality</span><span class="tag">Time management</span></div>
+<p class="note">Education: B.E., Electronics &amp; Communication Engineering, AAA College of Engineering and Technology (2017 – 2021). Client work is confidential, so these visuals are illustrations, not real project data.</p>
+</section>
+</main>
+
+<div class="cta"><h2>Let’s work together</h2><p>Open to AI data annotation and quality review roles in India.</p>
+<div class="btns" style="justify-content:center"><a class="btn" href="mailto:kvigneshwaran178@gmail.com">kvigneshwaran178@gmail.com</a><a class="btn o" href="tel:+916380700169">+91 63807 00169</a></div>
+<footer>Triplicane, Chennai, Tamil Nadu, India</footer></div>
+
+<script>
+document.querySelectorAll('.tilt').forEach(function(el){
+ el.addEventListener('mousemove',function(e){var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;el.style.transform='perspective(700px) rotateY('+(x*14)+'deg) rotateX('+(-y*14)+'deg) translateZ(8px)'});
+ el.addEventListener('mouseleave',function(){el.style.transform=''});
+});
+(function(){
+ try{
+  if(typeof THREE==='undefined')throw 0;
+  var c=document.getElementById('gl'),st=document.getElementById('stage');
+  var r=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true});r.setPixelRatio(Math.min(devicePixelRatio||1,2));
+  var s=new THREE.Scene(),cam=new THREE.PerspectiveCamera(50,1,.1,100);cam.position.z=9;
+  var g=new THREE.Group();s.add(g);
+  function box(w,h,d,col,x,y,z){var e=new THREE.LineSegments(new THREE.EdgesGeometry(new THREE.BoxGeometry(w,h,d)),new THREE.LineBasicMaterial({color:col}));e.position.set(x,y,z);g.add(e);return e}
+  box(4,4,4,0x2dd4bf,0,0,0);
+  var rings=[0xfbbf24,0xf472b6,0x38bdf8].map(function(col,i){var m=new THREE.Mesh(new THREE.TorusGeometry(2.8+i*.45,.018,8,90),new THREE.MeshBasicMaterial({color:col}));m.rotation.x=1+i*.5;m.rotation.y=i*.7;g.add(m);return m});
+  var tk=new THREE.Mesh(new THREE.TorusKnotGeometry(.35,.1,60,8),new THREE.MeshBasicMaterial({color:0xfbbf24,wireframe:true}));g.add(tk);
+  var bs=[box(1.2,1.6,1.2,0xfbbf24,-1,-.6,.5),box(.9,.9,.9,0xf472b6,1.1,.8,-.7),box(1.4,.8,1,0x2dd4bf,.6,-1.2,1)];
+  var core=new THREE.Mesh(new THREE.IcosahedronGeometry(.7,1),new THREE.MeshBasicMaterial({color:0x14b8a6,wireframe:true,transparent:true,opacity:.7}));g.add(core);
+  var N=700,p=new Float32Array(N*3);
+  for(var i=0;i<N;i++){var u=Math.random()*6.283,v=Math.acos(2*Math.random()-1),rad=3+Math.random()*1.6;p[i*3]=rad*Math.sin(v)*Math.cos(u);p[i*3+1]=rad*Math.sin(v)*Math.sin(u);p[i*3+2]=rad*Math.cos(v)}
+  var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(p,3));
+  g.add(new THREE.Points(pg,new THREE.PointsMaterial({color:0x99f6e4,size:.06})));
+  var mx=0,my=0;
+  addEventListener('pointermove',function(e){mx=e.clientX/innerWidth-.5;my=e.clientY/innerHeight-.5});
+  function rs(){var w=st.clientWidth,h=st.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+  addEventListener('resize',rs);rs();
+  var still=matchMedia('(prefers-reduced-motion:reduce)').matches,t=0;
+  (function loop(){requestAnimationFrame(loop);t+=still?0:.006;
+   g.rotation.y+=(t+mx*2-g.rotation.y)*.05;g.rotation.x+=(my*1.2-g.rotation.x)*.05;
+   core.rotation.x=t*3;core.rotation.y=t*2;tk.rotation.x=t*5;tk.rotation.z=t*4;rings.forEach(function(m,i){m.rotation.z=t*(2+i)});bs.forEach(function(b,i){b.position.y+=Math.sin(t*6+i)*.003});
+   r.render(s,cam)})();
+ }catch(e){document.getElementById('gl').style.display='none'}
+})();
+(function(){
+ document.querySelectorAll('section,.job').forEach(function(e){e.classList.add('rv')});
+ var all=document.querySelectorAll('.rv');
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.08});all.forEach(function(e){io.observe(e)})}else{all.forEach(function(e){e.classList.add('in')})}
+ document.querySelectorAll('.flip').forEach(function(f){f.addEventListener('click',function(){f.classList.toggle('on')})});
+ try{
+  if(typeof THREE==='undefined')throw 0;
+  var c=document.getElementById('gl2'),st=document.getElementById('lab');
+  var r=new THREE.WebGLRenderer({canvas:c,alpha:true,antialias:true});r.setPixelRatio(Math.min(devicePixelRatio||1,2));
+  var s=new THREE.Scene(),cam=new THREE.PerspectiveCamera(45,1,.1,100);cam.position.set(0,7,13);cam.lookAt(0,0,0);
+  var g=new THREE.Group();s.add(g);
+  g.add(new THREE.GridHelper(16,16,0x2dd4bf,0x1b4a44));
+  var items=[[-3,-2,2,1.1,1,0xfbbf24],[2,-3,2,1.1,1,0xfbbf24],[3.5,1.5,2.6,1.8,1.2,0x38bdf8],[-4,2.5,2,1.1,1,0xfbbf24],[0,3,.5,1.3,.5,0xf472b6],[-1,-5,.5,1.3,.5,0xf472b6]];
+  var pts=[];
+  items.forEach(function(it){
+   var w=it[2],h=it[3],d=it[4],col=it[5],gm=new THREE.BoxGeometry(w,h,d);
+   var e=new THREE.LineSegments(new THREE.EdgesGeometry(gm),new THREE.LineBasicMaterial({color:col}));e.position.set(it[0],h/2,it[1]);g.add(e);
+   var m=new THREE.Mesh(gm,new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.12}));m.position.copy(e.position);g.add(m);
+   for(var i=0;i<90;i++){pts.push(it[0]+(Math.random()-.5)*w,Math.random()*h,it[1]+(Math.random()-.5)*d)}
+  });
+  for(var i=0;i<900;i++){pts.push((Math.random()-.5)*16,0,(Math.random()-.5)*16)}
+  var pg=new THREE.BufferGeometry();pg.setAttribute('position',new THREE.BufferAttribute(new Float32Array(pts),3));
+  g.add(new THREE.Points(pg,new THREE.PointsMaterial({color:0x99f6e4,size:.07})));
+  var drag=false,px=0,py=0,vy=0.003;
+  st.addEventListener('pointerdown',function(e){drag=true;px=e.clientX;py=e.clientY});
+  addEventListener('pointerup',function(){drag=false});
+  addEventListener('pointermove',function(e){if(!drag)return;g.rotation.y+=(e.clientX-px)*.01;g.rotation.x=Math.max(-.4,Math.min(.9,g.rotation.x+(e.clientY-py)*.005));px=e.clientX;py=e.clientY});
+  function rs(){var w=st.clientWidth,h=st.clientHeight;r.setSize(w,h,false);cam.aspect=w/h;cam.updateProjectionMatrix()}
+  addEventListener('resize',rs);rs();
+  var still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+  (function loop(){requestAnimationFrame(loop);if(!drag&&!still)g.rotation.y+=vy;r.render(s,cam)})();
+ }catch(e){var l=document.getElementById('lab');if(l)l.style.display='none'}
+})();
+</script>
+</body>
+</html>
